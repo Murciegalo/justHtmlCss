@@ -1,0 +1,99 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=Gugi");
+@import "reset";
+@import "sectionsHome";
+@import "sectionTopics";
+@import "sectionGallery&Contact";
+// STRUCTURE
+// STRUCTURE
+*{
+  box-sizing: border-box;
+}
+// WANT TO BE ABLE TO ASSIGN DIFFERENT SIZES TO ALL ELEMENTS ON DOM
+// ONE PAGE WEBSITE DESIGN , WE WANT EVERY SECTION TO FULLY OCCUPY VIEWPORT (H & W = 100%)***ONE PAGE DESIGN
+html, body {
+  // 100% here so it will work here******
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family:  'Roboto', sans-serif;
+  text-align: center;
+}
+main{
+  // (H & W = 100%)***ONE PAGE DESIGN
+  height: 100%;
+}
+section{
+  // (H & W = 100%)***ONE PAGE DESIGN
+// 100% here so it will work here******
+  height: 100%;
+  // 100% here so it will work here******
+  width: 100%;
+  padding: 30px 15px;
+  // RELATIVE POSITION AS TO , IN CASE WE NEED TO MOVE ELEMENTS , WE'LL DO IT WITH ABSOLUTE POS ON THEM ELEMENTS
+  position: relative;
+}
+// END STYLE FOR DOM STRUCTURE
+// END STYLE FOR DOM STRUCTURE
+
+// HEADER
+header{
+  background-color: rgba(0,0,0, .5);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  // header is above the video and want to move as I scrolldown the page (Z-index comes into play here)
+  z-index: 100;
+  .logo{
+    background: url(../img/svg/logo.svg) no-repeat ;
+    background-size: contain;
+    // rem are used in case I decided to change font-size on document, rem will not change!!
+    height: 2.125rem;
+    width: 25%;
+    // if font-size , body or html document, this size Will be affected
+    margin-left: 1.85em;
+    float: left;
+    margin-top: 5px;
+  }
+  nav{
+    float: right;
+    text-align: right;
+    width: 70%;
+    ul{
+
+      li{
+        border-right: 1px solid white;
+        display: inline-block;
+        padding: 5px 20px;
+
+        a{
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 700;
+          font-size: 1.2rem;
+          padding-left: 10px;
+          color: rgba(255, 255, 255, .5);
+        }
+    }
+    // WANT TO SELECT FROM AL 'LI' BEGINNING BY LAST ONE, WANNA PICK THE FIRST ULTIMO
+    li:nth-last-of-type(1){
+      border-right: none;
+    }
+  }
+  // HOVER
+  ul li a:hover, ul li a:active{
+    color: rgba(0, 210, 100, .6);
+  }
+}
+}
+// VIDEO POSITION & ADJUSTMENT FOR ALL VIEW PORTS
+video{
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width:100%;
+}

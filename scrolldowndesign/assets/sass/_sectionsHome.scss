@@ -1,0 +1,78 @@
+// HOME SECTION
+#home {
+  background-color: rgba(0,0,0, .4);
+
+  .globo{
+    background: url(../img/svg/globo.svg) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    // MOVE ELEMENT 50% TO PAGE + ITS OWN SIZE, I WILL NEED TO ADJUST IT ON 50%
+    left: 50%;
+    // MOVE ELEMENT HALF ITS SIZE TO CENTER IT WITHIN ITS CONTAINER
+    transform: translateX(-100px);
+    position: absolute;
+    top: 24%;
+  }
+  // H2
+  h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4.5rem;
+    margin-top: 410px;
+    // GREEN TEXT ON H2
+   span{
+     color: rgba(0, 210, 100, 1);
+   }
+  }
+  // PARAGRAPH
+  p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.3rem;
+    padding: 20px 25%;
+    position: relative;
+  }
+  // ANCHOR
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: linear-gradient(rgba(0,210,100,1), rgba(0,130,60,1));
+    border-radius: 0.25em;
+    //1 TO OCCUPY ENTIRE VIEWPORT
+    display: block;
+    // 2 DEFINE ELEMENT WIDTH
+    width: 160px;
+    position: relative;
+    // 3. CENTERING FROM left
+   left: 50%;
+   transform: translateX(-50%);
+   // POSITIONING END
+    padding:20px;
+  }
+  #animation{
+    background: url(../img/svg/abajo.svg);
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 14em;
+    // POSITIONING BLOCK ELEMENTS ON CENTER
+    left: 50%;
+    transform: translateX(-50%);
+    // HIDE ELEMENT
+    opacity: 0;
+    position: relative;
+    // TO PROVOKE ANIMATION JUST WHEN HOVERING AND GETTING BACK TO NORMAL WHEN AREN't
+    transition: all 0.35s;
+    }
+    // ***THIS ANIMATION ON HOVER , WILL WORK JUST ON DESKTOP (OPACITY GOES FROM 0 TO .5 ON SCROLLDOWN ARROW)
+    a:hover + #animation{
+      opacity: 0.5;
+    }
+    //***FOR MOBILE DEVICES
+    a:active + #animation{
+      opacity: 0.5;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>Pure HTML5/CSS3 , part II</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scrollomatic.js"></script>
+    <script>
+          $ (document).ready(function(){
+            $ ("a.scroll").scrollomatic();
+          });
+    </script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="#home" class="scroll">
+        <div class="logo"></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#home" class="bar scroll">Home</a></li>
+          <li><a href="#topics" class="bar scroll">Topics</a></li>
+          <li><a href="#gallery" class="bar scroll">Gallery</a></li>
+          <li><a href="#contact" class="bar scroll">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER ENDS -->
+    <!-- MAIN CONTENT -->
+    <main class="content">
+                        <!-- repeat  browser asserts whether to preload or not the video -->
+      <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/webm" type="video/webm">
+            <p>Video format not supported by browser</p>
+          </video>
+          <!-- VIDEO SECTION -->
+          <section id="home">
+            <div class="globo"></div>
+            <h2>Welcome to this <span>HTML & CSS course</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam beatae, dolor soluta, pariatur, consequatur accusantium incidunt iure reiciendis dolore officia laborum atque magnam dignissimos minus numquam dolorem.</p>
+            <!-- BUTTON -->
+            <a href="#topics" class="scroll">More Info</a>
+            <!-- ANIMATION -->
+            <div id="animation"></div>
+            <!-- SCROLL-DOWN ANIMATION END -->
+          </section>
+          <!-- END HOME SECTION -->
+          <!-- TOPICS SECTION -->
+          <section id="topics">
+            <h3>Topics</h3>
+            <!-- ARTICLE -->
+            <article>
+              <!-- IMAGE1 -->
+              <div class="imag1"></div>
+              <h4>Classic Automoviles</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum saepe, beatae pariatur? Ab similique corporis est adipisci delectus, repudiandae provident, unde ipsa officiis quibusdam vel blanditiis itaque, impedit repellat.</p>
+              <a href="">LOREM IPSUM</a>
+
+              <!-- IMAGE2 -->
+              <div class="imag2"></div>
+              <h4>Cats & Dogs</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum saepe, beatae pariatur? Ab similique corporis est adipisci delectus, repudiandae provident, unde ipsa officiis quibusdam vel blanditiis itaque, impedit repellat.</p>
+              <a href="">LOREM IPSUM</a>
+
+              <!-- IMAGE3 -->
+              <div class="imag3"></div>
+              <h4>Sunrises & Sunsets</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laborum saepe, beatae pariatur? Ab similique corporis est adipisci delectus, repudiandae provident, unde ipsa officiis quibusdam vel blanditiis itaque, impedit repellat.</p>
+              <a href="">LOREM IPSUM</a>
+            </article>
+          </section>
+          <!-- END TOPIC SECTION -->
+          <section id="gallery">
+            <h3>Gallery</h3>
+            <div class="fotos">
+              <a href="#" title="Imagen1"><img src="img/1.jpg" alt="Imagen1"></a>
+              <a href="#" title="Imagen2"><img src="img/2.jpg" alt="Imagen2"></a>
+              <a href="#" title="Imagen3"><img src="img/3.jpg" alt="Imagen3"></a>
+              <a href="#" title="Imagen4"><img src="img/4.jpg" alt="Imagen4"></a>
+              <a href="#" title="Imagen5"><img src="img/5.jpg" alt="Imagen5"></a>
+              <a href="#" title="Imagen6"><img src="img/6.jpg" alt="Imagen6"></a>
+              <a href="#" title="Imagen7"><img src="img/7.jpg" alt="Imagen7"></a>
+              <a href="#" title="Imagen8"><img src="img/8.jpg" alt="Imagen8"></a>
+              <a href="#" title="Imagen9"><img src="img/9.jpg" alt="Imagen9"></a>
+            </div>
+          </section>
+          <!-- END GALLERY SECTION -->
+          <section id="contact">
+            <h3>Contact us</h3>
+            <div class="columncontact">
+            <div class="formulario">
+              <form method="post">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="mail" placeholder="Mail address"><br>
+                <input type="tel" name="phone number" placeholder="Phone Number" pattern="[0-9]{3}\s [0-9]{3}\s [0-9]{4}$" title="It must be a phone number following this format XXX XXX XXXX" required><br>
+                <textarea name="Messages" cols="30" rows="5" placeholder="Message"></textarea><br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9849.133813959352!2d-8.462080149999998!3d51.8922911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1524216597048" width="600" height="450"></iframe>
+            </div>
+            </div>
+            <a href="#home" class="up scroll"></a>
+          </section>
+          <!-- END CONTACT SECTION -->
+    <footer>
+      <p>Copiright &copy; All rights reserved to RrChaos</p>
+    </footer>
+    </main>
+  </body>
+</html>
