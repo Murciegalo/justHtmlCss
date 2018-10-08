@@ -1,0 +1,8 @@
+SECTIONS FROM INDEX.HTML (ABOUT, CONTACT US...) WON'T WORK DUE TO SASS AND GULP .
+On SASS off, About section will contain entire HTML structure and "content1" container.
+I will be able to create as many pages/section as I want to. 
+Website finished
+Sections example met
+Styles met.
+
+Solved

@@ -1,0 +1,154 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+// CENTERING ELEMENTS AND ALIGNING THEM TO THE LEFT
+*{
+  // margin: 0 auto;        DON'T WORK I believe for format applied on packg
+  // text-align: left;
+}
+// BACKGROUND AND FONT SIDE FOR DOM
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1c478e;
+  // linear gradient as background image to make much quicker the rendering
+  background-image: url(../img/background.png);
+  background-repeat: repeat-x;
+}
+.maincontainer{
+  width: 960px;
+  margin: 0 auto;
+}
+// ADJUST PADDING ON HEADER
+header{
+  padding: 20px 35px;
+  h1{
+    float: left;
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFF;
+    // COLOR WITHIN H1
+    .blueText{
+      color: #6190DB;
+    }
+  }//H1 END
+  // H2
+  h2{
+    float: right;
+    font-size: 40px;
+    font-weight: 500;
+    color: #6190DB;
+    .whiteText{
+      color: #FFF;
+    }
+  }
+}
+// HEADER END
+.menu{
+  clear: both;
+  margin: 40px 25px;
+  padding-top: 24px;
+  ul{
+    li{
+      display: inline-block;
+      margin-right: 22px;
+      a{
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 600;
+      } //END LINKS
+    }  //end list
+  }
+} //MENU END
+
+.leftmenu{
+  width: 210px;
+  float: left;
+  background: #1C478E;
+  border-radius: 5%;
+  padding-bottom: 5px;
+  h3{
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    font-weight: 600;
+    padding: 10px 10px;
+  } //H3 END
+  ul{
+    li{
+      border-bottom: 1px dotted #FFF;
+      padding: 10px 10px;
+      // LINKS LEFT MENU
+      a{
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 600;
+      }
+    } //LI END HERE
+  }
+} //LEFT MENU END
+.content1{                      //CONTENT 1 START
+  width: 685px;
+  float: right;
+  background: #FFF;
+  border: 5px solid #1C478E;
+  border-radius: 1.8%;
+  padding: 20px;
+  img{    //IMAGE WITHIN CONTENT1
+    float: right;
+  }
+  h2{
+  font-size: 22px;
+  font-weight: bold;
+} //H2 END
+  h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #84A6C9;
+  padding: 20px 0;
+} //H3 END
+  p:nth-last-of-type(1){
+  width: 350px;
+  }
+}
+// END CONTENT 1
+.content2{
+  width: 685px;
+  height: 160px;
+  float: right;
+  background: #FFF;
+  border: 5px solid #1C478E;
+  border-radius: 1.5%;
+  padding: 20px;
+  h2{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  } //END H2
+  .developer{       //DEVELOPER STYLES
+    width: 150px;
+    float: left;
+    h4{
+      font-size: 14px;
+      font-weight: bold;
+      color: #84A6C9;
+      padding-bottom: 10px;
+    }              //H4 STYLES END
+    ul{
+      padding-bottom: 10px;
+      li{
+        font-size: 13px;
+        padding: 3px;
+        .negrita{
+          font-weight: bold;
+        }   //BOLD LETTERS END
+      }          //LI STYLE END
+    }       //UNORDERED LIST STYLE END
+    a{
+      font-size: 13px;
+    }
+  }
+}
+footer{
+  clear: both;
+  color: #FFF;
+  text-align: center;
+}
