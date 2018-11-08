@@ -1,11 +1,11 @@
 {
-  "name": "CodingPhase-StarterKit",
+  "name": "",
   "version": "1.0.0",
-  "description": "Super Cool Framework",
+  "description": "",
   "main": "index.js",
-  "author": "joe santos garcia",
+  "author": "",
   "license": "MIT",
-  "homepage": "http://rocky.codingphase.com/",
+  "homepage": "",
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
@@ -41,8 +41,7 @@
     "bundle": "./node_modules/.bin/webpack",
     "production": "./node_modules/.bin/webpack -p",
     "watch": "gulp",
-    "sass": "gulp styles",
-    "js": "gulp webpack"
+    "sass": "gulp styles"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
